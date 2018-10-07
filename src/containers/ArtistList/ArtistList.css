@@ -1,0 +1,60 @@
+
+.ArtistList{	
+	color: black;	
+	font-size: 20px;
+	margin: 20px;
+	display: inline-flex;
+
+
+}
+.AnchorstyleAlbum {
+	text-decoration-line: underline;
+	text-decoration-color: blue;	
+	padding-left: 209px;
+	cursor : pointer;
+	display: block;
+	font-size: 0.8rem;
+	margin: -46px;
+}
+.AnchorstyleTrack{
+	text-decoration-line: underline;
+	text-decoration-color: blue;	
+	padding-left: 138px;
+	cursor : pointer;
+	display: block;
+	font-size: 0.8rem;
+	margin: -13px;
+}
+.Image{
+	
+	border:1px solid black;
+	margin-left:20px;
+	margin-top: 20px;
+	
+	
+}
+
+.Follower{
+	color: black;
+	font-size: 14px;
+
+
+}
+.Headline{
+	text-decoration: underline;
+	margin-left: 18px;
+}
+
+.Container{
+	display: inline-flex;
+	flex-flow: row wrap;
+	margin-top: 20px;
+
+}
+
+.ArtistContainer{
+	display: inline-flex;
+	flex-flow: row wrap;
+	margin-top: 72px;
+
+}

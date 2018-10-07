@@ -1,0 +1,28 @@
+.TrackList{
+	margin-top: 30px;
+	width: 100%;
+    height: 70%;
+	border:1px solid black;
+	overflow-x: auto;
+	box-sizing: border-box;
+
+}
+
+.ReleaseDate{
+	text-align: right;
+		
+
+}
+
+.List{
+	list-style: none;
+	margin:0px;
+
+
+}
+
+.Container{
+	display: inline-flex;
+	flex-flow: row wrap;
+
+}
