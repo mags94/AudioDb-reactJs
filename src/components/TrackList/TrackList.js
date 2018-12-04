@@ -99,7 +99,7 @@ render(){
 return(	
 	<Au key={this.state.albumId}>	
 	<Modal show={this.state.modalIndct} closeHandler={this.closedHandler}>
-	<div style={{backgroundColor:"black",color:"white",height:"15px",margin:"-18px",padding:"10px"}}> Track Listing</div>
+	<div style={{backgroundColor:"black",color:"white",height:"33px",margin:"-18px",padding:"10px"}}> Track Listing</div>
 	<div style={{fontSize:"20px", marginTop:"35px"}}>{this.state.album}</div>
 	<div className={classes.ReleaseDate}>Released: {this.state.yearReleased}</div>
 	<div className={classes.TrackList}>{tracksList}</div>

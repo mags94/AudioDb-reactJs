@@ -9,12 +9,17 @@ import classes from './Searchbox.css';
 class SearchBar extends Component{
 
 	state={
-		textValue: "",
+		textValue: null,
 		artistData: [],
 		artistIndct: true
 
 	}
 	postDataHandler=()=>{
+		if(this.state.textValue === null){
+			this.setState({
+				artistIndct:false
+			});
+		}
 			
 		axios.get('https://www.theaudiodb.com/api/v1/json/1/search.php',{
 			params:{
@@ -72,9 +77,9 @@ render(){
 
 	return(
 		<Au>
-		<div style={{margin:"15px"}}>
-		<label >Search by artist  </label>
-		<input type="searchbox" onChange={this.onChangeEventHandler.bind(this)} />  
+		<div style={{"marginLeft":"15px"}}>
+		<label className={classes.Label} >Search by artist  </label>
+		<input type="search" onChange={this.onChangeEventHandler.bind(this)} autoFocus required/>  
 		<button className={classes.Button} onClick={this.postDataHandler} >Search</button>
 		<br/>		
 		<ArtistList show={this.state.artistIndct} artistDetail={this.state.artistData} />

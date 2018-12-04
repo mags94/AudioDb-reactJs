@@ -1,6 +1,23 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: goldenrod;
+}
 .Button {
-
-	border:2px solid black;
-	margin: 10px;
+	width: 80px;
+    border-radius: 22px;
+    border: 3px solid blanchedalmond;
+    margin: 10px;
+    background-color: white;
+    color: blue;
+	padding: 10px;
+	outline: none;
 	
+}
+.Button :focus{
+	outline: none;
+}
+.Label{
+	color:blue;
 }
